@@ -1,0 +1,263 @@
+/* ======= GLOBAL STYLES ======= */
+body {
+    background-color: #4b611d;
+    font-family: sans-serif;
+}
+
+/* ======= NAVIGATION ======= */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    background: #4b611d;
+    transition: transform 0.3s;
+    /* smooth hover animation */
+}
+
+nav a {
+    text-decoration: none;
+    color: #decdad;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fff;
+    transform: scale(1.1);
+    /* text become bigger */
+}
+
+/* ======= HEADER SECTION ======= */
+
+.header {
+    text-align: center;
+}
+
+.header-text h1 {
+    font-family: Playfair Display;
+    font-size: 64px;
+    margin: auto;
+    color: #decdad;
+    border-bottom: 3px solid #d38e3f;
+    /* Decorative underline */
+    display: inline-block;
+    padding-bottom: 5px;
+    /* Space between text and underline */
+}
+
+.header-text p {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #decdad;
+    /* Beige text */
+}
+
+/* ======= CONTENT SECTION ======= */
+.content {
+    padding: 0 20px;
+    margin: 20px;
+    /* outer spacing around section */
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+/* ======= CARD DESIGN ======= */
+.card {
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px #142600;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover */
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    /* lift card slightly up */
+    box-shadow: 0 12px 25px #4b611d;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    /* Crop image */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 0 0 10px;
+    color: #4b611d;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+/* ======= FOOTER ======= */
+footer {
+    background: #4b611d;
+    color: #decdad;
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid #142600;
+}
+
+/* ======= GLOBAL STYLES (Desktop first) ======= */
+body {
+    background-color: #4b611d;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* ======= NAVIGATION ======= */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    background: #4b611d;
+}
+
+nav a {
+    text-decoration: none;
+    color: #decdad;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* ======= HEADER SECTION ======= */
+.header {
+    text-align: center;
+}
+
+.header-text h1 {
+    font-family: Playfair Display;
+    font-size: 64px;
+    margin: auto;
+    color: #decdad;
+    border-bottom: 3px solid #d38e3f;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.header-text p {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #decdad;
+}
+
+/* ======= CONTENT SECTION ======= */
+.content {
+    padding: 0 20px;
+    margin: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Desktop 3 columns */
+    gap: 25px;
+}
+
+/* ======= CARD DESIGN ======= */
+.card {
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px #142600;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px #4b611d;
+}
+
+.card img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 0 0 10px;
+    color: #4b611d;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+/* ======= FOOTER ======= */
+footer {
+    background: #4b611d;
+    color: #decdad;
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid #142600;
+}
+
+/* ======= MOBILE STYLES ======= */
+@media (max-width: 767px) {
+    nav {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .header-text h1 {
+        font-size: 32px;
+        border-bottom: 2px solid #d38e3f;
+    }
+
+    .header-text p {
+        font-size: 16px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+}
